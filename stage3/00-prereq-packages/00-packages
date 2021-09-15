@@ -1,0 +1,7 @@
+apt-transport-https
+build-essential
+curl
+git
+gnupg
+vim
+nginx-light

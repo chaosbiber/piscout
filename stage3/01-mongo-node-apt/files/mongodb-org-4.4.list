@@ -1,0 +1,4 @@
+deb [ arch=arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.4 multiverse
+
+# no server packages:
+# deb [ arch=arm64 ] http://repo.mongodb.org/apt/debian RELEASE/mongodb-org/4.4 main

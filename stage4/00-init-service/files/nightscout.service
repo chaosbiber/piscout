@@ -1,0 +1,19 @@
+[Unit]
+Description=NightScout Node.js Server
+Requires=mongod.service
+Requires=nightscout-init.service
+After=mongod.service
+After=nightscout-init.service
+
+[Service]
+ExecStart=/home/NIGHTSCOUTUSER/start_nightscout.sh
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=nightscout-server
+User=NIGHTSCOUTUSER
+Group=NIGHTSCOUTUSER
+
+[Install]
+WantedBy=multi-user.target

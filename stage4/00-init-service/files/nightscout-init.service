@@ -1,0 +1,14 @@
+[Unit]
+Description=NightScout Init Service to setup once and update local certificates
+Requires=network.target
+Requires=mongod.service
+After=network.target
+After=mongod.service
+
+[Service]
+ExecStart=/home/NIGHTSCOUTUSER/install/init.sh
+User=NIGHTSCOUTUSER
+Group=NIGHTSCOUTUSER
+
+[Install]
+WantedBy=default.target

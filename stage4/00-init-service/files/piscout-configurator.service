@@ -1,0 +1,13 @@
+[Unit]
+Description=piscout-configurator service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5s
+ExecStart=/home/NIGHTSCOUTUSER/piscout-configurator
+User=NIGHTSCOUTUSER
+Group=NIGHTSCOUTUSER
+WorkingDirectory=/home/NIGHTSCOUTUSER
+[Install]
+WantedBy=multi-user.target
