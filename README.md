@@ -2,6 +2,8 @@
 
 Fork of [pi-gen](https://github.com/RPi-Distro/pi-gen/tree/arm64) used to create Raspberry Pi OS images. (Previously known as Raspbian).
 
+Image based on 64bit and 'lite' version!
+
 ## English docs in the future, testing currently focused on German community
 
 ## Disclaimer
@@ -20,7 +22,7 @@ Ein Update-Pfad ist derzeit auch noch nicht in Planung, neue Images überschreib
 
 ## Quickstart
 
-### Beenötigte Hardware
+### Benötigte Hardware
 
 - Raspberry Pi 3 oder 4 mit mind. 1GB RAM
 - Strom (offizielles Netzteil empfohlen)
@@ -32,9 +34,10 @@ Ein Update-Pfad ist derzeit auch noch nicht in Planung, neue Images überschreib
 - entweder selber builden oder aktuelle Version unter https://notwait.in/files/image_2021-09-15-piscout-0.1.zip laden
 - auf SD-Karte spielen, z.B. mit [balenaEtcher](https://www.balena.io/etcher/)
 - oder [Raspberry Pi Imager](https://www.raspberrypi.org/software/) ('Use Custom')
-- Karte einlegen, starten und nach erfolgreichem Boot plus etwa 30 Sekunden IP-Adresse des Pis (*piscout* statt *raspberrypi*) identifizieren (per `ping piscout`, DHCP-Leases im Router oder Netzwerkscan)
+- Karte einlegen, starten und nach erfolgreichem Boot plus etwa 30 Sekunden IP-Adresse des Pis (*piscout* statt *raspberrypi*) identifizieren (per `ping piscout`, DHCP-Leases im Router, Netzwerkscan, oder Display und Keyboard anschließen, `ip a`)
 - http(s)://[ip]/piscout aufrufen um den API Schlüssel zu kopieren
 - auf http(s)://[ip]/ läuft Nightscout
+- Umgebungsvariable für Nightscout Einheit steht auf **mg/dl**! Weiß nicht ob Änderung über Profil möglich.
 
 ## TODO / Hilfe gesucht
 
